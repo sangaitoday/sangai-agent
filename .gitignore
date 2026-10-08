@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtualenv
+.venv/
+venv/
+
+# Secrets — never commit (but keep the template)
+.env
+.env.*
+!.env.example
+
+# Runtime state — generated, never committed:
+#   data/cc-sessions.json   Slack session key -> Claude session UUID map
+#   data/bridge.pid         singleton-lock pidfile
+data/
+
+# Stray runtime artifacts (pidfiles, logs, atomic temps) anywhere in the tree
+*.pid
+*.log
+*.tmp
